@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('product_name');
             $table->string('price');
+            $table->longText('images')->nullable();
             $table->timestamps();
         });
     }
